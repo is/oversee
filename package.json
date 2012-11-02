@@ -1,0 +1,14 @@
+{
+	"name": "oversee",
+	"version": "0.0.1",
+	"description": "A simple job scheduler written in Node.JS",
+  "author": "Xin Yu <scaner@gmail.com>",
+  "main": "os",
+  "repository": {
+		"type": "git",
+		"url": "git://gitcafe.com/is/oversee.js.git"
+	},
+	"license": {
+		"type": "MIT"
+	}
+}
