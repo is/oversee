@@ -1,14 +1,24 @@
 {
-	"name": "oversee",
-	"version": "0.0.1",
-	"description": "A simple job scheduler written in Node.JS",
+  "name": "oversee",
+  "version": "0.0.1",
+  "description": "A simple job scheduler written in Node.JS",
   "author": "Xin Yu <scaner@gmail.com>",
-  "main": "os",
+  "main": "os.js",
   "repository": {
-		"type": "git",
-		"url": "git://gitcafe.com/is/oversee.js.git"
-	},
-	"license": {
-		"type": "MIT"
-	}
+    "type": "git",
+    "url": "git://gitcafe.com/is/oversee.js.git"
+  },
+  "license": {
+    "type": "MIT"
+  },
+  "dependencies": {
+    "coffee-script": "1.4.x",
+    "jog": "0.5.x",
+    "extsprintf": "1.0.x",
+    "mocha": "1.6.x"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  }
 }
