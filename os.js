@@ -8,7 +8,7 @@ var
   OSContext = core.OSContext;
 
 common.getLogger('MAIN').info('START', {msg:'---------------------------------------------'});
-core.mlog.info('-- oversee.js --');
+core.mlog.info('-- oversee.js -- v0.0.1 --');
 
 // --- test codes ----
 var ctx = new OSContext("main");
