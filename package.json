@@ -1,6 +1,6 @@
 {
   "name": "oversee",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A simple job scheduler written in Node.JS",
   "author": "Xin Yu <scaner@gmail.com>",
   "main": "os.js",

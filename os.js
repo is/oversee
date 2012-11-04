@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 var
+  pkginfo = require('./package.json'),
   common = require('./lib/common'),
   core = require('./lib/index'),
   OSTask = core.OSTask,
@@ -8,7 +9,7 @@ var
   OSContext = core.OSContext;
 
 common.getLogger('MAIN').info('START', {msg:'---------------------------------------------'});
-core.mlog.info('-- oversee.js -- v0.0.1 --');
+core.mlog.info('-- oversee.js -- v' + pkginfo.version + ' --');
 
 // --- test codes ----
 var ctx = new OSContext("main");
