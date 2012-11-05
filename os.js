@@ -13,8 +13,7 @@ core.mlog.info('-- oversee.js -- v' + pkginfo.version + ' --');
 
 // --- test codes ----
 var ctx = new OSContext("main");
-var slot = ctx.add(new OSSlot('main', 80));
-var slot = ctx.add(new OSSlot('default', 20));
+
 var task = ctx.add(new OSTask({
   name: 't0', capacity:20, slot: 'default',
   cmd: './s1.sh'}));
