@@ -16,6 +16,7 @@
     "log4js": "0.5.x",
     "jog": "0.5.x",
     "extsprintf": "1.0.x",
+    "strformat" : "x.x.x",
     "mocha": "1.6.x"   
   },
   "engines": {
