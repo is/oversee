@@ -3,7 +3,7 @@
 var
   pkginfo = require('./package.json'),
   common = require('./lib/common'),
-  core = require('./lib/index'),
+  core = require('./lib/os'),
   OSTask = core.OSTask,
   OSSlot = core.OSSlot,
   OSContext = core.OSContext;
