@@ -21,19 +21,19 @@ var task = ctx.add(new OSTask({
 ctx.add(new OSTask({
   name: 't1', from:['t0'], 
   capacity:20, slot: 'default',
-  cmd: './s2.sh'
+  cmd: 's2.sh'
 }));
 
 ctx.add(new OSTask({
   name: 't2', from:['t0'], 
   capacity:20, slot: 'default',
-  cmd: './s2.sh'
+  cmd: 's2.sh'
 }));
 
 ctx.add(new OSTask({
   name: 't3', from:['t0'], 
   capacity:20, slot: 'default',
-  cmd: './s2.sh'
+  cmd: 's2.sh'
 }));
 
 ctx.tidy();
