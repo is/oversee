@@ -14,24 +14,30 @@ core.mlog.info('-- oversee.js -- v' + pkginfo.version + ' --');
 // --- test codes ----
 var ctx = new OSContext("main");
 
+ctx.conf.param = {
+  day:'2012-10-33',
+};
+
 var task = ctx.add(new OSTask({
-  name: 't0', capacity:20, slot: 'default',
+  name: 't0-{day}', capacity:20, slot: 'default',
   cmd: 's1.sh'}));
 
 ctx.add(new OSTask({
-  name: 't1', from:['t0'], 
+  name: 't1', from:['t0-{day}'], 
+  capacity:20, slot: 'default',
+  cmd: 's2.sh',
+  args: ['{day}'],
+  args_param: true,
+}));
+
+ctx.add(new OSTask({
+  name: 't2', from:['t0-{day}'], 
   capacity:20, slot: 'default',
   cmd: 's2.sh'
 }));
 
 ctx.add(new OSTask({
-  name: 't2', from:['t0'], 
-  capacity:20, slot: 'default',
-  cmd: 's2.sh'
-}));
-
-ctx.add(new OSTask({
-  name: 't3', from:['t0'], 
+  name: 't3', from:['t0-{day}'], 
   capacity:20, slot: 'default',
   cmd: 's2.sh'
 }));
