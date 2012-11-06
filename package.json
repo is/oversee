@@ -1,6 +1,6 @@
 {
   "name": "oversee",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A simple job scheduler written in Node.JS",
   "author": "Xin Yu <scaner@gmail.com>",
   "main": "os.js",
@@ -16,7 +16,9 @@
     "log4js": "0.5.x",
     "jog": "0.5.x",
     "extsprintf": "1.0.x",
-    "strformat" : "x.x.x",
+    "strftime": "x.x.x",
+    "strformat": "x.x.x",
+    "mkdirp": "x.x.x",
     "mocha": "1.6.x"   
   },
   "engines": {

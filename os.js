@@ -16,7 +16,7 @@ var ctx = new OSContext("main");
 
 var task = ctx.add(new OSTask({
   name: 't0', capacity:20, slot: 'default',
-  cmd: './s1.sh'}));
+  cmd: 's1.sh'}));
 
 ctx.add(new OSTask({
   name: 't1', from:['t0'], 
@@ -37,4 +37,4 @@ ctx.add(new OSTask({
 }));
 
 ctx.tidy();
-ctx.run();
+ctx.start();
