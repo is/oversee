@@ -3,6 +3,7 @@
   "version": "0.2.1",
   "revision": 8,
   "description": "A simple job scheduler written in Node.JS",
+  "keywords": ["schedule", "task", "job"],
   "author": "Xin Yu <scaner@gmail.com>",
   "main": "os.js",
   "repository": {
