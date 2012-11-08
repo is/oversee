@@ -22,7 +22,6 @@
     "strftime": "x.x.x",
     "strformat": "x.x.x",
     "mkdirp": "x.x.x",
-    "pty.js": "*",
     "mocha": "1.6.x"   
   },
   "engines": {

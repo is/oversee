@@ -1,0 +1,29 @@
+#!/usr/bin/python
+
+import os, sys
+import select
+import pty
+
+argv = sys.argv
+argv.pop(0)
+
+(pid, fd) = pty.fork()
+if pid == 0:
+	os.execvp(argv[0], argv)
+
+
+fin = os.fdopen(fd)
+while True:	
+	try:
+		x = fin.read()
+	except IOError, e:
+		break
+	
+	if not x:
+		break
+	sys.stdout.write(x)
+
+sys.exit(os.waitpid(pid, 0)[1])
+
+# vim: ts=2 sts=2 ai
+
