@@ -1,6 +1,8 @@
 // C.param.day = '2012-10-33';
 
-fill(C.param, 'day', '2012-10-33')
+fill(C.param, 'day', '2012-10-33');
+
+C.slots.default.capacity = 80;
 
 C.add(new OSTask({
   name: 't0-{day}', capacity:20, slot: 'default',
