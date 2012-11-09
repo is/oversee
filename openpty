@@ -3,6 +3,7 @@
 import os, sys
 import select
 import pty
+import time
 
 argv = sys.argv
 argv.pop(0)
@@ -23,8 +24,13 @@ while True:
 		break
 	sys.stdout.write(x)
 
-v = os.waitpid(pid, 0)
-sys.exit(os.WEXITSTATUS(v[1]))
+w = os.waitpid(pid, 0)[1]
 
+if os.WIFSIGNALED(w):
+	os.kill(os.getpid(), os.WTERMSIG(w))
+else:
+	sys.exit(os.WEXITSTATUS(w))
+
+time.sleep(3000)
 # vim: ts=2 sts=2 ai
 
