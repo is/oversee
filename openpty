@@ -23,7 +23,8 @@ while True:
 		break
 	sys.stdout.write(x)
 
-sys.exit(os.waitpid(pid, 0)[1])
+v = os.waitpid(pid, 0)
+sys.exit(os.WEXITSTATUS(v[1]))
 
 # vim: ts=2 sts=2 ai
 
