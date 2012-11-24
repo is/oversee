@@ -20,8 +20,8 @@
     "extsprintf": "1.0.x",
     "optimist": "0.x.x",
     "strftime": "x.x.x",
-    "strformat": "x.x.x",
-    "mkdirp": "x.x.x",
+    "strformat": "*",
+    "mkdirp": "*",
     "wrench": "*",
     "mocha": "1.6.x"   
   },
